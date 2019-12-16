@@ -1,0 +1,21 @@
+'use strict';
+
+const formatString = function(string) {
+   return string.length <= 40 ? string : `${string.slice(0,39)}...`;
+  };
+  
+  console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
+  // Curabitur ligula sapien, tincidunt non.
+  
+  console.log(formatString('Vestibulum facilisis, purus nec pulvinar iaculis.'));
+  // Vestibulum facilisis, purus nec pulvina...
+  
+  console.log(formatString('Curabitur ligula sapien.'));
+  // Curabitur ligula sapien.
+  
+  console.log(
+    formatString(
+      'Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.',
+    ),
+  );
+  // Nunc sed turpis. Curabitur a felis in n...
